@@ -1,0 +1,12 @@
+<div class="tech-stack">
+    <h2>Tech Stack</h2>
+   <div class="tech-stack__list">
+    <a [title]="stack.text"  class="tech-stack-box"
+     *ngFor="let stack of techStacks"
+     [href]="stack.url"
+     target="_blank"
+     >
+        <img src="assets/icons/{{stack.icon}}.svg">
+    </a>
+   </div>
+</div>
