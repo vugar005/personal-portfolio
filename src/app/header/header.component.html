@@ -1,1 +1,14 @@
-<p>header works!</p>
+<div class="header">
+    <div class="header__brand"></div>
+    <div class="header-nav">
+        <a class="header-nav__item" *ngFor="let link of navLinks" [routerLink]="link.url">{{link.text}}</a>
+    </div>
+
+    <div class="hamburger-menu" (click)="onMenuOpen()" *ngIf="!isFullMenuOpen" >
+        <div class="hamburger-menu__line"></div>
+        <div class="hamburger-menu__line"></div>
+        <div class="hamburger-menu__line"></div>
+    </div>
+
+    <vg-header-full-nav *ngIf="isFullMenuOpen" (close)="onMenClose()" [navLinks]="navLinks"></vg-header-full-nav>
+</div>

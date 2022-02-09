@@ -1,0 +1,43 @@
+:host {
+    display: block;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    height: var(--header-height);
+}
+
+.header-nav {
+    margin-left: auto;
+    &__item {
+        font-size: 1rem;
+        margin-right: 2.5rem;
+        color: var(--text-color);
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}
+
+.hamburger-menu {
+    display: none;
+    width: 25px;
+    cursor: pointer;
+    &__line {
+        height: 1px;
+        width: 100%;
+        background: #ffffff;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-nav {
+        display: none;
+    }
+       .hamburger-menu {
+           display: block;
+       }
+}

@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+:root {
+    --vg-primary-gradient: linear-gradient(137.01deg,#d5fc78 -3.62%,#bcf48b 36.69%,#98e7a2 97.7%);
+    --vg-primary: #4cd137;
+    --text-color: #ffffff;
+    --background-dark: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    --header-height: 5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.vg-button {
+    background: transparent;
+    padding: 0.8rem 2rem;
+    color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    &--primary {
+        color: var(--vg-primary);
+        border-color: var(--vg-primary);
+    }
+}
