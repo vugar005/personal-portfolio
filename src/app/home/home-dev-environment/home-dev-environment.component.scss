@@ -1,0 +1,45 @@
+:host {
+    display: block;
+    padding: 2.5rem 0;
+}
+
+.environment {
+    h2 {
+        color: var(--vg-primary);
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.environment-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    width: 12rem;
+    box-shadow: 0 8px 32px 0 rgb(12 240 73 / 15%);
+    border: 1px solid var(--vg-primary);
+    cursor: pointer;
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+
+    img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    &__title {
+        color: var(--vg-primary);
+        margin-top: 1rem;
+    }
+
+    &__description {
+        font-size: .875rem;
+        line-height: 1.25rem;
+        color: var(--text-color);
+        text-align: center;
+    }
+}
