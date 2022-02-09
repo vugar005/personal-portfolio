@@ -1,5 +1,5 @@
 import { Component, ChangeDetectionStrategy, Input, Output, EventEmitter } from '@angular/core';
-import { NavLink } from '../header.models';
+import { NavLink } from 'src/app/shared/models/nav-link.model';
 
 @Component({
   selector: 'vg-header-full-nav',

@@ -1,0 +1,10 @@
+<div class="contact">
+    <div class="contact__header">
+        <h2>Contact</h2>
+    </div>
+    <div class="contact__list">
+        <a class="contact-item" *ngFor="let contact of contacts" [href]="contact.url" target="_black" [title]="contact.text">
+            <i class="fa-brands {{contact.icon}}"></i>
+        </a>
+    </div>
+</div>

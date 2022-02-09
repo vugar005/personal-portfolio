@@ -1,4 +1,4 @@
-import { NavLink } from "./header.models";
+import { NavLink } from "../shared/models/nav-link.model";
 
 export const NAV_LINKS: NavLink[] = [
     {
