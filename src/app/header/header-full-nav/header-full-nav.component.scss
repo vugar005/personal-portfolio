@@ -7,9 +7,14 @@
     background: rgba(0, 0, 0, .7)
 }
 .close-icon {
-    padding-left: 2rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding-right: 2rem;
     padding-top: 2rem;
-    color: var(--text-color);
+    cursor: pointer;
+    color: var(--background-dark);
+
     cursor: pointer;
     .material-icons {
         font-size: 2rem;

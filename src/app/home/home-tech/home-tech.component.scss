@@ -25,6 +25,11 @@
     border: 1px solid var(--vg-primary);
     border-radius: 10px;
     cursor: pointer;
+    transition: transform 300ms ease-in-out;
+    &:hover {
+        transform: translateY(-15px);
+    }
+
     img {
         width: 100%;
     }
