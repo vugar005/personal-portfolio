@@ -9,7 +9,7 @@ export const CAREERS: Career[] = [
  {
      title: 'EPAM',
      subtitle: 'Senior Front-end Engineer / 2019 - 2022',
-     description: 'Architect and developing highly scalable components for Hypersonix Web application. Create highly customized views and pages for different use cases which deals with tons of data',
+     description: 'Developing big highly scalable web applications for Finance and Insurance enterprises using Angular.',
      icon: 'epam.svg'
  },
  {
@@ -20,8 +20,14 @@ export const CAREERS: Career[] = [
 },
  {
     title: 'Raymond James',
-    subtitle: 'Senior Front-end Engineer / 2019 - 2020',
-    description: 'Building bio workflow for leading finance advisor enterprise',
+    subtitle: 'Front-end Engineer / 2019 - 2020',
+    description: 'Developing bio workflow for leading finance advisor enterprise.',
     icon: 'raymond-james.svg'
+},
+{
+    title: 'Neuron Technologies',
+    subtitle: 'Front-end Developer / 2017 - 2019',
+    description: 'Building web applications for ministry of education.',
+    icon: 'unibook.svg'
 },
 ];

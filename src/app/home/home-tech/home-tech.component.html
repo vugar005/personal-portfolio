@@ -5,8 +5,9 @@
      *ngFor="let stack of techStacks"
      [href]="stack.url"
      target="_blank"
+     [attr.aria-label]="stack.text"
      >
-        <img src="assets/icons/{{stack.icon}}.svg">
+        <img src="assets/icons/{{stack.icon}}.svg" [alt]="stack.text">
     </a>
    </div>
 </div>

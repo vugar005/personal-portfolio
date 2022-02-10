@@ -4,3 +4,10 @@
     overflow: auto;
     height: 100vh;
 }
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: var(--header-z-index);
+    background: var(--background-dark);
+}

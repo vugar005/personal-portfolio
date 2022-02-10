@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HeaderFullNavComponent } from './header/header-full-nav/header-full-nav.component';
+import { MaskBackgroundDirectiveModule } from './shared/directives/mask-background/mask-background.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HeaderFullNavComponent } from './header/header-full-nav/header-full-nav
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaskBackgroundDirectiveModule
   ],
   providers: [],
   bootstrap: [AppComponent]

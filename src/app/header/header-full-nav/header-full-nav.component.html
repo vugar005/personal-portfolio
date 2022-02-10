@@ -5,7 +5,9 @@
        </span>
     </div>
     <div class="header-nav">
-        <a class="header-nav__item" *ngFor="let link of navLinks" [routerLink]="link.url">{{link.text}}</a>
+        <a class="header-nav__item"  (click)="onClose()" *ngFor="let link of navLinks" [routerLink]="link.url"
+        [attr.aria-label]="link.text"
+        >{{link.text}}</a>
     </div>
 
 </div>
