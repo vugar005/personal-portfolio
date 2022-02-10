@@ -30,6 +30,22 @@ a {
     text-decoration: none;
 }
 
+.vg-root-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: #fbfbf8;
+    img {
+        width: 15rem;
+        height: 10rem;
+    }
+}
+
 .vg-button {
     background: transparent;
     padding: 0.8rem 2rem;
