@@ -10,7 +10,7 @@ import { HeaderFullNavComponent } from './header/header-full-nav/header-full-nav
   declarations: [
     AppComponent,
     HeaderComponent,
-    HeaderFullNavComponent
+    HeaderFullNavComponent,
   ],
   imports: [
     BrowserModule,

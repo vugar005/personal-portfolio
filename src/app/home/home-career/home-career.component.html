@@ -5,8 +5,7 @@
      *ngFor="let item of careers"
      >
      <div class="career-card-header">
-        <div class="career-card-header__icon">
-            <img src="assets/careers/{{item.icon}}">
+        <div class="career-card-header__icon" vgMaskBackground="/assets/careers/{{item.icon}}" >
         </div>
         <div class="career-card-header-content">
             <h3 class="career-card-header-content__title vg-caption">{{item.title}}</h3>

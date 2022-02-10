@@ -63,10 +63,9 @@
 
 
         &__icon {
-            img {
-                width: 3rem;
-                height: 3rem;
-            }
+            width: 3rem;
+            height: 3rem;
+            background-color: var(--vg-primary);
         }
 
         .career-card-header-content {

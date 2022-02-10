@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeTechComponent } from './home-tech/home-tech.component';
 import { HomeDevEnvironmentComponent } from './home-dev-environment/home-dev-environment.component';
 import { HomeCareerComponent } from './home-career/home-career.component';
+import { MaskBackgroundDirectiveModule } from '../shared/directives/mask-background/mask-background.module';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full'},
@@ -22,7 +23,8 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    MaskBackgroundDirectiveModule
   ]
 })
 export class HomeModule { }
