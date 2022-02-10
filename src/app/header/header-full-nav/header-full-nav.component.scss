@@ -9,7 +9,7 @@
 .close-icon {
     padding-left: 2rem;
     padding-top: 2rem;
-    color: #ffffff;
+    color: var(--text-color);
     cursor: pointer;
     .material-icons {
         font-size: 2rem;
@@ -27,7 +27,7 @@
     height: 100%;
     padding-top: 4rem;
     &__item {
-        color: #ffffff;
+        color: var(--text-color);
         font-size: 1.5rem;
         text-decoration: none;
         margin: 1rem;

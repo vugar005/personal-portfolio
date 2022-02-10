@@ -6,7 +6,7 @@
 .header {
     display: flex;
     align-items: center;
-    padding: 0 2rem;
+    padding: 2rem;
     height: var(--header-height);
 
     &__brand {
@@ -25,6 +25,21 @@
         color: var(--text-color);
         text-transform: uppercase;
         cursor: pointer;
+        position: relative;
+        &::after {
+            content: "";
+            width: 0px;
+            height: 1px;
+            background: var(--text-color);
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            transition: width 150ms ease-in-out;
+        }
+
+        &:hover::after, &--active::after {
+            width: 100%;
+        }
     }
 }
 
@@ -35,7 +50,7 @@
     &__line {
         height: 1px;
         width: 100%;
-        background: #ffffff;
+        background: var(--text-color);;
         margin: 5px 0;
     }
 }

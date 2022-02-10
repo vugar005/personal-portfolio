@@ -1,10 +1,18 @@
 <div class="contact">
     <div class="contact__header">
-        <h2>Contact</h2>
+        <h3>Contact</h3>
+        <h2>LET'S GET IN TOUCH!</h2>
     </div>
-    <div class="contact__list">
-        <a class="contact-item" *ngFor="let contact of contacts" [href]="contact.url" target="_black" [title]="contact.text">
-            <i class="fa-brands {{contact.icon}}"></i>
-        </a>
+    <div class="contact__content">
+        <p> You can reach me on various social networks and developers platforms so feel free to pick up one that you are the most comfortable with or use the following contact form and I will try to get back to you... </p>
+    </div>
+
+    <div class="contact__footer">
+        <h2>Social Links</h2>
+        <div class="contact-list">
+            <a class="contact-item" *ngFor="let contact of contacts" [href]="contact.url" target="_black" [title]="contact.text">
+                <i class="fa-brands {{contact.icon}}"></i>
+            </a>
+        </div>
     </div>
 </div>

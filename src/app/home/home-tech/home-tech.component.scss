@@ -21,7 +21,7 @@
     padding: 0.4rem;
     margin: 1rem;
     width: 5rem;
-    box-shadow: 0 8px 32px 0 rgb(12 240 73 / 15%);
+    box-shadow: var(--box-shadow);
     border: 1px solid var(--vg-primary);
     border-radius: 10px;
     cursor: pointer;

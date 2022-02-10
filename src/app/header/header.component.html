@@ -3,7 +3,8 @@
         <img src="assets/icons/brand.jpeg">
     </div>
     <div class="header-nav">
-        <a class="header-nav__item" *ngFor="let link of navLinks" [routerLink]="link.url">{{link.text}}</a>
+        <a class="header-nav__item" routerLinkActive="header-nav__item--active" *ngFor="let link of navLinks" [routerLink]="link.url">{{link.text}}</a>
+        <a class="header-nav__item" href="https://medium.com/@vugar-005" target="_blank" >BLOG</a>
     </div>
 
     <div class="hamburger-menu" (click)="onMenuOpen()" *ngIf="!isFullMenuOpen" >
