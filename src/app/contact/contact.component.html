@@ -10,7 +10,7 @@
     <div class="contact__footer">
         <h2>Social Links</h2>
         <div class="contact-list">
-            <a class="contact-item" *ngFor="let contact of contacts" [href]="contact.url" target="_black" [title]="contact.text">
+            <a class="contact-item" *ngFor="let contact of contacts" [href]="contact.url" target="_black" [attr.aria-label]="contact.icon" [title]="contact.text">
                 <i class="fa-brands {{contact.icon}}"></i>
             </a>
         </div>
