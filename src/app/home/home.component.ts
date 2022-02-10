@@ -1,4 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'vg-home',
@@ -8,9 +9,14 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   public currentDate: Date = new Date();
-  constructor() { }
+  constructor(private title: Title) {}
 
   public ngOnInit(): void {
+    this.setMetaTags();
+  }
+
+  private setMetaTags(): void {
+    this.title.setTitle(`Home`);
   }
 
 }
