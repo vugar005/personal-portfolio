@@ -8,9 +8,7 @@ import { HomeDevEnvironmentComponent } from './home-dev-environment/home-dev-env
 import { HomeCareerComponent } from './home-career/home-career.component';
 import { MaskBackgroundDirectiveModule } from '../shared/directives/mask-background/mask-background.module';
 
-const routes: Routes = [
-  { path: '', component: HomeComponent, pathMatch: 'full' },
-];
+const routes: Routes = [{ path: '', component: HomeComponent, pathMatch: 'full' }];
 
 @NgModule({
   declarations: [
@@ -20,10 +18,6 @@ const routes: Routes = [
     HomeDevEnvironmentComponent,
     HomeCareerComponent,
   ],
-  imports: [
-    CommonModule,
-    RouterModule.forChild(routes),
-    MaskBackgroundDirectiveModule,
-  ],
+  imports: [CommonModule, RouterModule.forChild(routes), MaskBackgroundDirectiveModule],
 })
 export class HomeModule {}
