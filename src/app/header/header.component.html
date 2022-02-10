@@ -1,5 +1,7 @@
 <div class="header">
-    <div class="header__brand"></div>
+    <div class="header__brand">
+        <img src="assets/icons/brand.jpeg">
+    </div>
     <div class="header-nav">
         <a class="header-nav__item" *ngFor="let link of navLinks" [routerLink]="link.url">{{link.text}}</a>
     </div>

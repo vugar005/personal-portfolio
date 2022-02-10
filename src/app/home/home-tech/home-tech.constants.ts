@@ -36,5 +36,10 @@ export const TECH_STACKS: TechStack[] = [
             icon: 'sass',
             url: 'https://sass-lang.com'
         },
+        {
+            text: 'Jasmine',
+            icon: 'jasmine',
+            url: 'https://jasmine.github.io'
+        },
 
 ];

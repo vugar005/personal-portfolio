@@ -5,6 +5,7 @@ import { HomeIntroComponent } from './home-intro/home-intro.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeTechComponent } from './home-tech/home-tech.component';
 import { HomeDevEnvironmentComponent } from './home-dev-environment/home-dev-environment.component';
+import { HomeCareerComponent } from './home-career/home-career.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full'},
@@ -16,7 +17,8 @@ const routes: Routes = [
     HomeComponent,
     HomeIntroComponent,
     HomeTechComponent,
-    HomeDevEnvironmentComponent
+    HomeDevEnvironmentComponent,
+    HomeCareerComponent
   ],
   imports: [
     CommonModule,

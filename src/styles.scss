@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 html {
@@ -37,4 +38,8 @@ a {
         color: var(--vg-primary);
         border-color: var(--vg-primary);
     }
+}
+.vg-caption {
+    font-size: .875rem;
+    line-height: 1.25rem;
 }
