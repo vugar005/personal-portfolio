@@ -1,1 +1,85 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    font-family: monospace;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+:root {
+    --vg-primary-gradient: linear-gradient(137.01deg,#d5fc78 -3.62%,#bcf48b 36.69%,#98e7a2 97.7%);
+    --vg-primary: #2c2c54;
+    --vg-primary-light: rgb(112, 111, 211);
+    --text-color: rgba(0,0,0,.87);
+    --vg-disabled: #00000042;
+    --background-dark: #fbfbf8;
+    --box-shadow: 0 8px 32px 0 rgb(44, 44, 84 / 15%)
+    --header-height: 5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.vg-button {
+    background: transparent;
+    padding: 0.8rem 2rem;
+    color: var(--text-color);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--text-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    &--primary {
+        color: var(--vg-primary);
+        border-color: var(--vg-primary);
+    }
+}
+.vg-caption {
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+//Scrollbar
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--vg-primary);
+    border: 0px none #ffffff;
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--vg-primary);
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background: #000000;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgb(220, 221, 225);
+    border: 0px none rgb(220, 221, 225);
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-track:hover {
+    background: rgb(220, 221, 225);
+  }
+  ::-webkit-scrollbar-track:active {
+    background: vg(--vg-primary);
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }

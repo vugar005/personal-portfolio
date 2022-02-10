@@ -1,0 +1,22 @@
+<div class="header">
+    <div class="header__brand">
+        <img src="assets/icons/brand.jpeg">
+    </div>
+    <div class="header-nav">
+        <a class="header-nav__item"
+        *ngFor="let link of navLinks"
+        [ngClass]="{'header-nav__item--disabled': link.disabled}"
+        routerLinkActive="header-nav__item--active"
+        [routerLink]="link.url"
+        >{{link.text}}</a>
+        <a class="header-nav__item" href="https://medium.com/@vugar-005" target="_blank" >BLOG</a>
+    </div>
+
+    <div class="hamburger-menu" (click)="onMenuOpen()" *ngIf="!isFullMenuOpen" >
+        <div class="hamburger-menu__line"></div>
+        <div class="hamburger-menu__line"></div>
+        <div class="hamburger-menu__line"></div>
+    </div>
+
+    <vg-header-full-nav *ngIf="isFullMenuOpen" (close)="onMenClose()" [navLinks]="navLinks"></vg-header-full-nav>
+</div>

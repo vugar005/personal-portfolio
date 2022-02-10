@@ -1,0 +1,52 @@
+:host {
+    display: block;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    width: 100%;
+    .box-info {
+        width: 60%;
+        padding-top: 2rem;
+        order: 0;
+        &__header {
+            margin-bottom: 1rem;
+            h1 {
+                color: var(--vg-primary);
+                font-size: 2rem;
+            }
+        }
+        &__content {
+            font-size: 1.2rem;
+            line-height: 1.75rem;
+            color: var(--text-color);
+        }
+
+        &__footer {
+            display: block;
+            margin-top: 2.5rem;
+        }
+    }
+
+    .box-image {
+        width: 20rem;
+        height: 15rem;
+        order: 0;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .box {
+        flex-direction: column;
+        .box-info {
+            order: 1;
+        }
+    }
+}

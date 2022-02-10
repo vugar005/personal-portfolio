@@ -1,0 +1,20 @@
+<div class="career">
+    <h2>Career</h2>
+   <div class="career__list">
+    <div [title]="item.title"  class="career-card"
+     *ngFor="let item of careers"
+     >
+     <div class="career-card-header">
+        <div class="career-card-header__icon" vgMaskBackground="/assets/careers/{{item.icon}}" >
+        </div>
+        <div class="career-card-header-content">
+            <h3 class="career-card-header-content__title vg-caption">{{item.title}}</h3>
+            <p class="career-card-header-content__subtitle vg-caption">{{item.subtitle}}</p>
+        </div>
+     </div>
+     <div class="career-card-footer">
+        <p class="vg-caption">{{item.description}}</p>
+     </div>
+   </div>
+   </div>
+</div>

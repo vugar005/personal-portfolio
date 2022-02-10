@@ -1,0 +1,90 @@
+:host {
+    display: block;
+    padding: 2.5rem 0;
+}
+
+.career {
+    h2 {
+        color: var(--vg-primary);
+        margin-bottom: 2.5rem;
+    }
+    &__list {
+    }
+}
+
+.career-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+    padding-left: 2rem;
+    padding-bottom: 2.5rem;
+    position: relative;
+    max-width: 700px;
+
+    &:not(:first-of-type):before{
+        content: "";
+        position: absolute;
+        bottom: 50%;
+        left: 0;
+        width: 2px;
+        height: 50%;
+        background-color: var(--vg-primary);
+    }
+
+    &:not(:last-of-type):after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 2px;
+        height: 50%;
+        background-color: var(--vg-primary);
+    }
+
+
+    .career-card-header {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 0.5rem;
+
+        &:not(:last-of-type):before{
+            content: "";
+            position: absolute;
+            bottom: 50%;
+            left: -3px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            z-index: 0;
+            background-color: var(--vg-primary);
+        }
+
+
+        &__icon {
+            width: 3rem;
+            height: 3rem;
+            background-color: var(--vg-primary);
+        }
+
+        .career-card-header-content {
+            margin-left: 1rem;
+            &__title {
+                color: var(--vg-primary);
+            }
+
+            &__subtitle {
+                color: var(--text-color);
+                text-align: left;
+            }
+        }
+    }
+
+    .career-card-footer {
+        p {
+            color: var(--text-color);
+        }
+    }
+
+}
