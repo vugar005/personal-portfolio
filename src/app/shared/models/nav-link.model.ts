@@ -3,4 +3,5 @@ export interface NavLink {
     url?: string;
     description?: string;
     icon?: string;
+    disabled?: boolean;
 }

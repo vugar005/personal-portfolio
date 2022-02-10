@@ -26,6 +26,11 @@
         text-transform: uppercase;
         cursor: pointer;
         position: relative;
+        &--disabled {
+            pointer-events: none;
+            color: var(--vg-disabled);
+        }
+
         &::after {
             content: "";
             width: 0px;

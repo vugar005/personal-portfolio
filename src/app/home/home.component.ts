@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   }
 
   private setMetaTags(): void {
-    this.title.setTitle(`Home`);
+    this.title.setTitle(`Personal Portfolio of Vugar`);
   }
 
 }
