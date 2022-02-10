@@ -6,7 +6,7 @@ import { CONTACT_LIST } from './contact.constants';
   selector: 'vg-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ContactComponent implements OnInit {
   public readonly contacts = CONTACT_LIST;
@@ -19,5 +19,4 @@ export class ContactComponent implements OnInit {
   private setMetaTags(): void {
     this.title.setTitle(`Contact Vugar`);
   }
-
 }

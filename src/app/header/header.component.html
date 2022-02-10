@@ -1,23 +1,40 @@
 <div class="header">
-    <a routerLink="home" class="header__brand" [attr.aria-label]="'Home'" vgMaskBackground="/assets/icons/brand.svg" >
-        <!-- <img src="assets/icons/brand.jpeg" alt="Brand icon" > -->
-    </a>
-    <div class="header-nav">
-        <a class="header-nav__item"
-        *ngFor="let link of navLinks"
-        [ngClass]="{'header-nav__item--disabled': link.disabled}"
-        routerLinkActive="header-nav__item--active"
-        [routerLink]="link.url"
-        [attr.aria-label]="link.text"
-        >{{link.text}}</a>
-        <a class="header-nav__item" href="https://medium.com/@vugar-005" target="_blank"  [attr.aria-label]="'Blog'">BLOG</a>
-    </div>
+  <a
+    routerLink="home"
+    class="header__brand"
+    [attr.aria-label]="'Home'"
+    vgMaskBackground="/assets/icons/brand.svg"
+  >
+    <!-- <img src="assets/icons/brand.jpeg" alt="Brand icon" > -->
+  </a>
+  <div class="header-nav">
+    <a
+      class="header-nav__item"
+      *ngFor="let link of navLinks"
+      [ngClass]="{ 'header-nav__item--disabled': link.disabled }"
+      routerLinkActive="header-nav__item--active"
+      [routerLink]="link.url"
+      [attr.aria-label]="link.text"
+      >{{ link.text }}</a
+    >
+    <a
+      class="header-nav__item"
+      href="https://medium.com/@vugar-005"
+      target="_blank"
+      [attr.aria-label]="'Blog'"
+      >BLOG</a
+    >
+  </div>
 
-    <div class="hamburger-menu" (click)="onMenuOpen()" *ngIf="!isFullMenuOpen" >
-        <div class="hamburger-menu__line"></div>
-        <div class="hamburger-menu__line"></div>
-        <div class="hamburger-menu__line"></div>
-    </div>
+  <div class="hamburger-menu" (click)="onMenuOpen()" *ngIf="!isFullMenuOpen">
+    <div class="hamburger-menu__line"></div>
+    <div class="hamburger-menu__line"></div>
+    <div class="hamburger-menu__line"></div>
+  </div>
 
-    <vg-header-full-nav *ngIf="isFullMenuOpen" (close)="onMenClose()" [navLinks]="navLinks"></vg-header-full-nav>
+  <vg-header-full-nav
+    *ngIf="isFullMenuOpen"
+    (closeMenu)="onMenClose()"
+    [navLinks]="navLinks"
+  ></vg-header-full-nav>
 </div>

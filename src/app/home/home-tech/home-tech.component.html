@@ -1,13 +1,15 @@
 <div class="tech-stack">
-    <h2>Tech Stack</h2>
-   <div class="tech-stack__list">
-    <a [title]="stack.text"  class="tech-stack-box"
-     *ngFor="let stack of techStacks"
-     [href]="stack.url"
-     target="_blank"
-     [attr.aria-label]="stack.text"
-     >
-        <img src="assets/icons/{{stack.icon}}.svg" [alt]="stack.text">
+  <h2>Tech Stack</h2>
+  <div class="tech-stack__list">
+    <a
+      [title]="stack.text"
+      class="tech-stack-box"
+      *ngFor="let stack of techStacks"
+      [href]="stack.url"
+      target="_blank"
+      [attr.aria-label]="stack.text"
+    >
+      <img src="assets/icons/{{ stack.icon }}.svg" [alt]="stack.text" />
     </a>
-   </div>
+  </div>
 </div>
