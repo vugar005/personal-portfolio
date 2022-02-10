@@ -5,7 +5,7 @@
      *ngFor="let item of environments"
      target="_blank"
      >
-        <img src="assets/setups/{{item.icon}}">
+        <img src="assets/setups/{{item.icon}}" [alt]="item.text">
         <h3 class="environment-box__title">{{item.text}}</h3>
         <div class="environment-box__description">{{item.description}}</div>
    </div>
