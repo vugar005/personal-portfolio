@@ -20,12 +20,12 @@ export const CAREERS: Career[] = [
 },
  {
     title: 'Raymond James',
-    subtitle: 'Senior Front-end Engineer / 2019 - 2020',
+    subtitle: 'Front-end Engineer / 2019 - 2020',
     description: 'Developing bio workflow for leading finance advisor enterprise.',
     icon: 'raymond-james.svg'
 },
 {
-    title: 'Neuron',
+    title: 'Neuron Technologies',
     subtitle: 'Front-end Developer / 2017 - 2019',
     description: 'Building web applications for ministry of education.',
     icon: 'unibook.svg'
