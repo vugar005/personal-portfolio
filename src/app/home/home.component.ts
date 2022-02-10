@@ -5,7 +5,7 @@ import { Title } from '@angular/platform-browser';
   selector: 'vg-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomeComponent implements OnInit {
   public currentDate: Date = new Date();
@@ -18,5 +18,4 @@ export class HomeComponent implements OnInit {
   private setMetaTags(): void {
     this.title.setTitle(`Personal Portfolio of Vugar`);
   }
-
 }

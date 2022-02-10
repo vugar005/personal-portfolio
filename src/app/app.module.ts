@@ -8,17 +8,9 @@ import { HeaderFullNavComponent } from './header/header-full-nav/header-full-nav
 import { MaskBackgroundDirectiveModule } from './shared/directives/mask-background/mask-background.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    HeaderFullNavComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    MaskBackgroundDirectiveModule
-  ],
+  declarations: [AppComponent, HeaderComponent, HeaderFullNavComponent],
+  imports: [BrowserModule, AppRoutingModule, MaskBackgroundDirectiveModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

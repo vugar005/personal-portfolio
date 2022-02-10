@@ -1,15 +1,19 @@
 <div class="box">
-    <div class="box-info">
-        <div class="box-info__header">
-            <h1>{{homeIntro.name}}</h1>
-        </div>
-        <div class="box-info__content" [innerHtml]="homeIntro.text"> </div>
+  <div class="box-info">
+    <div class="box-info__header">
+      <h1>{{ homeIntro.name }}</h1>
+    </div>
+    <div class="box-info__content" [innerHtml]="homeIntro.text"></div>
 
-        <a class="box-info__footer" routerLink="/contact"  [attr.aria-label]="'Contact'">
-            <button class="vg-button vg-button--primary">Contact</button>
-        </a>
-    </div>
-    <div class="box-image">
-        <img src="assets/images/portfolio.jpg" alt="Intro Image">
-    </div>
+    <a
+      class="box-info__footer"
+      routerLink="/contact"
+      [attr.aria-label]="'Contact'"
+    >
+      <button class="vg-button vg-button--primary">Contact</button>
+    </a>
+  </div>
+  <div class="box-image">
+    <img src="assets/images/portfolio.jpg" alt="Intro Image" />
+  </div>
 </div>

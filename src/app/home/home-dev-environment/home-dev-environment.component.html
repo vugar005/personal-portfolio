@@ -1,13 +1,15 @@
 <div class="environment">
-    <h2>Dev Environment</h2>
-   <div class="environment__list">
-    <div [title]="item.text"  class="environment-box"
-     *ngFor="let item of environments"
-     target="_blank"
-     >
-        <img src="assets/setups/{{item.icon}}" [alt]="item.text">
-        <h3 class="environment-box__title">{{item.text}}</h3>
-        <div class="environment-box__description">{{item.description}}</div>
-   </div>
-   </div>
+  <h2>Dev Environment</h2>
+  <div class="environment__list">
+    <div
+      [title]="item.text"
+      class="environment-box"
+      *ngFor="let item of environments"
+      target="_blank"
+    >
+      <img src="assets/setups/{{ item.icon }}" [alt]="item.text" />
+      <h3 class="environment-box__title">{{ item.text }}</h3>
+      <div class="environment-box__description">{{ item.description }}</div>
+    </div>
+  </div>
 </div>

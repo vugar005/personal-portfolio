@@ -1,13 +1,15 @@
 <div class="menu-screen">
-    <div class="close-icon">
-        <span class="material-icons" (click)="onClose()">
-            X
-       </span>
-    </div>
-    <div class="header-nav">
-        <a class="header-nav__item"  (click)="onClose()" *ngFor="let link of navLinks" [routerLink]="link.url"
-        [attr.aria-label]="link.text"
-        >{{link.text}}</a>
-    </div>
-
+  <div class="close-icon">
+    <span class="material-icons" (click)="onClose()"> X </span>
+  </div>
+  <div class="header-nav">
+    <a
+      class="header-nav__item"
+      (click)="onClose()"
+      *ngFor="let link of navLinks"
+      [routerLink]="link.url"
+      [attr.aria-label]="link.text"
+      >{{ link.text }}</a
+    >
+  </div>
 </div>
