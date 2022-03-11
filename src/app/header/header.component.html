@@ -7,24 +7,27 @@
   >
     <!-- <img src="assets/icons/brand.jpeg" alt="Brand icon" > -->
   </a>
-  <div class="header-nav">
-    <a
+  <nav class="header-nav">
+    <button
       class="header-nav__item"
       *ngFor="let link of navLinks"
-      [ngClass]="{ 'header-nav__item--disabled': link.disabled }"
+      [disabled]="link?.disabled"
       routerLinkActive="header-nav__item--active"
       [routerLink]="link.url"
       [attr.aria-label]="link.text"
-      >{{ link.text }}</a
     >
-    <a
+      {{ link.text }}
+    </button>
+
+    <button
       class="header-nav__item"
       href="https://medium.com/@vugar-005"
       target="_blank"
       [attr.aria-label]="'Blog'"
-      >BLOG</a
     >
-  </div>
+      BLOG
+    </button>
+  </nav>
 
   <div class="hamburger-menu" (click)="onMenuOpen()" *ngIf="!isFullMenuOpen">
     <div class="hamburger-menu__line"></div>
