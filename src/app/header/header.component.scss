@@ -26,7 +26,11 @@
         text-transform: uppercase;
         cursor: pointer;
         position: relative;
-        &--disabled {
+        background: transparent;
+        outline: 0;
+        border: 0;
+        
+        &:disabled {
             pointer-events: none;
             color: var(--vg-disabled);
         }

@@ -3,13 +3,15 @@
     <span class="material-icons" (click)="onClose()"> X </span>
   </div>
   <div class="header-nav">
-    <a
+    <button
       class="header-nav__item"
       (click)="onClose()"
       *ngFor="let link of navLinks"
+      [disabled]="link.disabled"
       [routerLink]="link.url"
       [attr.aria-label]="link.text"
-      >{{ link.text }}</a
     >
+      {{ link.text }}
+    </button>
   </div>
 </div>
