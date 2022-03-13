@@ -9,7 +9,11 @@ import { MaskBackgroundDirectiveModule } from './shared/directives/mask-backgrou
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, HeaderFullNavComponent],
-  imports: [BrowserModule.withServerTransition({ appId: 'serverApp' }), AppRoutingModule, MaskBackgroundDirectiveModule],
+  imports: [
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    AppRoutingModule,
+    MaskBackgroundDirectiveModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

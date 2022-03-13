@@ -19,14 +19,14 @@
       {{ link.text }}
     </button>
 
-    <button
+    <a
       class="header-nav__item"
       href="https://medium.com/@vugar-005"
       target="_blank"
       [attr.aria-label]="'Blog'"
     >
       BLOG
-    </button>
+    </a>
   </nav>
 
   <div class="hamburger-menu" (click)="onMenuOpen()" *ngIf="!isFullMenuOpen">
